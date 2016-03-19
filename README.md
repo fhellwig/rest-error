@@ -25,7 +25,7 @@ console.log(err.toString());
 // Error: 500 (Internal Server Error) Cannot connect to the database.
 ```
 
-The `badRequest` is a factory method. No `new` keyword is required. There is one factory method for each of the 400- and 500-series errors.
+The `badRequest` method and `internalServerError` method are factory methods. No `new` keyword is required. There is one factory method for each of the 400- and 500-series errors.
 
 If you want to call the constructor yourself, you can:
 
@@ -42,7 +42,7 @@ function sqrt(val) {
 As you can see, using the factory method...
 
 - is more readable,
-- does not require `new`,
+- does not require the `new` keyword,
 - includes the descriptive text, and
 - handles `util.format` arguments.
 
@@ -56,3 +56,5 @@ let conflict = RestError.conflict(err);
 console.log(conflict.toString());
 // Error: 409 (Conflict) That record already exists.
 ```
+
+This is useful when wrapping a library error into an error for your REST API.
