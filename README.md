@@ -1,6 +1,6 @@
 # rest-error
 
-Provides the RestError class and associated factory methods.
+Provides the `RestError` class and associated factory methods.
 
 ## Usage
 
