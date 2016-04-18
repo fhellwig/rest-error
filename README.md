@@ -1,15 +1,15 @@
-# RestError
+# rest-error
 
 Provides the RestError class and associated factory methods.
 
 ## Usage
 
 ```
-$ npm install --save resterror
+$ npm install --save rest-error
 ```
 
 ```javascript
-const RestError = require('resterror');
+const RestError = require('rest-error');
 
 function sqrt(val) {
 	if (val < 0) {
