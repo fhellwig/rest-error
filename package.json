@@ -1,14 +1,14 @@
 {
-    "name": "resterror",
+    "name": "rest-error",
     "version": "1.0.0",
     "description": "Provides the RestError class and associated factory methods.",
-    "main": "resterror.js",
+    "main": "rest-error.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/fhellwig/resterror"
+        "url": "https://github.com/fhellwig/rest-error"
     },
     "keywords": [
         "REST",
@@ -17,7 +17,7 @@
     "author": "Frank Hellwig",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/fhellwig/resterror/issues"
+        "url": "https://github.com/fhellwig/rest-error/issues"
     },
-    "homepage": "https://github.com/fhellwig/resterror"
+    "homepage": "https://github.com/fhellwig/rest-error"
 }
