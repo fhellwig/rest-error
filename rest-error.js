@@ -193,6 +193,7 @@ class RestError extends Error {
 
     constructor(code, text, message) {
         super(message);
+	this.name = 'RestError',
         this._code = code;
         this._text = text;
     }
@@ -204,7 +205,6 @@ class RestError extends Error {
     get text() {
         return this._text;
     }
-
 
     toString() {
         return util.format('Error: %d (%s) %s',
@@ -220,7 +220,6 @@ Object.keys(errors).forEach(key => {
         } else {
             let args = Array.prototype.slice.call(arguments);
             let message = util.format.apply(util, args);
-            console.log('args', args);
             return new RestError(error.code, error.text, message);
         }
     }
